@@ -19,6 +19,11 @@ from employee
 group by dept_code
 having count(dept_code) >= 3;
 
+# SELECT DEPT_CODE, COUNT(*) AS EMP_COUNT
+# FROM EMPLOYEE
+# GROUP BY DEPT_CODE
+# HAVING COUNT(*) >= 3;
+
 
 -- EMPLOYEE 테이블에서 JOB_CODE별 평균 급여를 조회하되, 평균 급여가 4000000 이상인 직급만 조회하시오.
 select a.job_code,

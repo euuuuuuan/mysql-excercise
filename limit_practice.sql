@@ -2,7 +2,7 @@
 select salary,
        emp_name
 from employee
-order by salary
+order by salary desc
 limit 5;
 
 
@@ -11,5 +11,5 @@ select
     hire_date,
     emp_name
 from employee
-order by hire_date
+order by hire_date desc
 limit 10;
