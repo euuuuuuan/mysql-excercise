@@ -34,6 +34,13 @@ WHERE E.SALARY > (
     FROM EMPLOYEE
     WHERE DEPT_CODE = E.DEPT_CODE
 );
+#        dept_code,
+#        avg(salary)
+# from employee
+# where avg(salary) >= 2000
+# group by emp_name, dept_code;
+# 그루핑을 하는 것과 안하는 것의 차이가 무엇인가. 위와 아래의 차이.
+
 
 -- 상관서브쿼리문제
 -- EMPLOYEE 테이블에서 각 부서별로 가장 높은 급여를 받는 직원의 이름, 부서명, 급여를 조회하시오.
