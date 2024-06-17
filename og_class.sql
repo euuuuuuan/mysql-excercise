@@ -25,7 +25,7 @@ create table if not exists favourite_subject
 create table if not exists class
 (
     student_no  int auto_increment primary key comment '학번',
-    stuent_name varchar(255) not null comment '학생명',
+    student_name varchar(255) not null comment '학생명',
     gender      varchar(5)   not null comment '성별',
     check (gender in ('남', '여')),
     github_id   varchar(255) not null unique comment '깃허브ID',
